@@ -19,15 +19,25 @@ namespace DotNetCRUD_API.Controllers
             }
         }
 
-    [HttpGet]
-    public IEnumerable<TodoItem> GetAll() => _context.TodoItems.ToList();
+        [HttpGet]
+        public IEnumerable<TodoItem> GetAll() => _context.TodoItems.ToList();
 
-    [HttpGet("{id}", Name = "GetTodo")]
+        [HttpGet("{id}", Name = "GetTodo")]
         public IActionResult GetById(long id)
         {
             var item = _context.TodoItems.FirstOrDefault(t => t.Id == id);
             if (item == null) return NotFound();
             return new ObjectResult(item);
+        }
+
+        [HttpPost]
+        public IActionResult Create([FromBody] TodoItem item)
+        {
+            if (item == null) return BadRequest();
+            _context.TodoItems.Add(item);
+            _context.SaveChanges();
+
+            return CreatedAtRoute("GetTodo", new { id = item.Id }, item);            
         }
     }
 }

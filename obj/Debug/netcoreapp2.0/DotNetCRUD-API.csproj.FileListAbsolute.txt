@@ -1,0 +1,10 @@
+/Users/jeremysheridanwells/workspace/tutorials/DotNetCRUD-API/bin/Debug/netcoreapp2.0/DotNetCRUD-API.deps.json
+/Users/jeremysheridanwells/workspace/tutorials/DotNetCRUD-API/bin/Debug/netcoreapp2.0/DotNetCRUD-API.runtimeconfig.json
+/Users/jeremysheridanwells/workspace/tutorials/DotNetCRUD-API/bin/Debug/netcoreapp2.0/DotNetCRUD-API.runtimeconfig.dev.json
+/Users/jeremysheridanwells/workspace/tutorials/DotNetCRUD-API/bin/Debug/netcoreapp2.0/DotNetCRUD-API.dll
+/Users/jeremysheridanwells/workspace/tutorials/DotNetCRUD-API/bin/Debug/netcoreapp2.0/DotNetCRUD-API.pdb
+/Users/jeremysheridanwells/workspace/tutorials/DotNetCRUD-API/obj/Debug/netcoreapp2.0/DotNetCRUD-API.csproj.CoreCompileInputs.cache
+/Users/jeremysheridanwells/workspace/tutorials/DotNetCRUD-API/obj/Debug/netcoreapp2.0/DotNetCRUD-API.AssemblyInfoInputs.cache
+/Users/jeremysheridanwells/workspace/tutorials/DotNetCRUD-API/obj/Debug/netcoreapp2.0/DotNetCRUD-API.AssemblyInfo.cs
+/Users/jeremysheridanwells/workspace/tutorials/DotNetCRUD-API/obj/Debug/netcoreapp2.0/DotNetCRUD-API.dll
+/Users/jeremysheridanwells/workspace/tutorials/DotNetCRUD-API/obj/Debug/netcoreapp2.0/DotNetCRUD-API.pdb

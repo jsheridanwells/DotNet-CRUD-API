@@ -39,5 +39,17 @@ namespace DotNetCRUD_API.Controllers
 
             return CreatedAtRoute("GetTodo", new { id = item.Id }, item);            
         }
+        [HttpPut("{id}")]
+        public IActionResult Update(long id, [FromBody] TodoItem item)
+        {
+            // if (item == null || item.Id != id) return BadRequest();
+            var todo = _context.TodoItems.FirstOrDefault(t => t.Id == id);
+            if (todo == null) return NotFound();
+            todo.Done = item.Done;
+            todo.Name = item.Name;
+            _context.TodoItems.Update(todo);
+            _context.SaveChanges();
+            return new NoContentResult();
+        }
     }
 }
